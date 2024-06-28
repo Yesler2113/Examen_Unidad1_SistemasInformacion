@@ -1,10 +1,14 @@
 import {Text, View} from 'react-native';
-import { Screen1 } from './presentation/screens/Screnn1';
+import { TemperatureScreen } from './presentation/screens/TemperatureScreen';
+import { globalStyles } from './config/app-theme';
+import { ColorsScreens } from './presentation/screens/ColorsScreens';
+
 
 export const App = () => {
   return (
-    <View>
-      <Screen1 />
+    <View style={globalStyles.container}>
+       <ColorsScreens/> 
+      {/* <TemperatureScreen/> */}
     </View>
   );
 };
